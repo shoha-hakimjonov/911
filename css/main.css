@@ -42,6 +42,11 @@ body { margin:0; /* This is used to reset any browser-default margins */ }
 	  margin-top:20px;
 }
 
+#close {
+font-size:20px;
+	font-family: 'BebasR';
+}
+
 .higher-z {
 	z-index:3;
 }
