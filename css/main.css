@@ -1,0 +1,239 @@
+body { margin:0; /* This is used to reset any browser-default margins */ }
+@font-face {
+  font-family: BebasC;
+  src: url('../fonts/bebas-cyrillic.ttf');
+}
+@font-face {
+	font-family: BebasR;
+	src: url('../fonts/bebas-regular.ttf');
+  }
+  @font-face {
+	font-family: BebasThin;
+	src: url('../fonts/bebas-thin.ttf');
+  }
+  @font-face {
+	font-family: BebasBook;
+	src: url('../fonts/bebas-book.ttf');
+  }
+
+.whole {
+	height: 100vh;
+/*	width:100vw;*/
+}
+.home-container {
+	background-color:#e6e6e6;
+}
+
+#images-col {
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    bottom: 5%;
+}
+
+#apply-btn {
+	width: 60%; 
+	font-size:50px;
+	 font-family: 'BebasR';
+	  box-shadow:0 0 5px rgba(0,0,0,0.8); 
+	  margin-top:10px;
+	  border-radius: 10px;
+	  margin-top:20px;
+}
+
+.higher-z {
+	z-index:3;
+}
+.text-normal{
+	font-family: 'BebasR';
+	font-size: 60px;
+	display: block;
+	line-height: 70px;
+	text-transform: uppercase;
+	z-index:999;
+}
+.clients {
+	font-size: 80px;
+}
+.top-container {
+	height: 45%;
+}
+.bottom-container {
+	height: 55%;
+
+}
+#phone {
+	animation: MoveUpDown 6s linear infinite;
+	width: 24%;
+	float: right;
+	display: inline;
+	position: absolute;
+	right: 37%;
+	top: 3%; z-index: 2;
+  }
+  
+  @keyframes MoveUpDown {
+	0%, 100% {
+	  top: 3%;
+	}
+	50% {
+	  top: 8%;
+	}
+  }
+
+  #pc {
+	animation: MoveUpDownPC 12s linear infinite;
+	width:55%; 
+	float: right;
+  }
+  
+  @keyframes MoveUpDownPC {
+	0%, 100% {
+		transform: translateY(0);
+	
+	}
+	50% {
+		transform: translateY(20px);
+	
+	}
+  }
+
+.bottom-row {
+bottom:0;
+
+}
+#logo {
+	width:40%;
+}
+
+
+.deafult-margin-top {
+	margin-top:75px;
+	margin-left:50px;
+}
+.default-margin-bottom {
+	margin-bottom: 75px;
+	margin-left:50px;
+}
+.bottom-content {
+	margin-top:auto;
+}
+
+.btn-danger {
+	background: rgb(2,0,36);
+background: linear-gradient(rgba(2,0,36,1) 0%, rgba(247,1,2,1) 0%, rgba(153,28,32,1) 100%);
+}
+
+#social {
+	position: absolute;
+	right: 25px;
+	top: -75px;
+}
+
+.width-50 {
+	width:35%;
+}
+#social-2 {
+	display:none;
+}
+/*less than desktop size*/
+@media screen and (max-width: 992px) {
+	.deafult-margin-top {
+		margin-top:25px;
+		margin-left:0;
+	}
+
+	#logo {
+		width:65%;
+	}
+	#social-2 {
+		display:flex;
+		margin-top: 25px;
+		padding-right: 0;
+	}
+	#social {
+		display: none;
+	}
+	.width-50 {
+		width:65%;
+	}
+
+	#images-col {
+		position: absolute;
+		right:0;
+		bottom: 0;
+		top: 20%;
+		max-width: 100%;
+		bottom: 5%;
+	}
+
+
+	#phone {
+		animation: MoveUpDown 6s linear infinite;
+		width: 40%;
+		float: right;
+		display: inline;
+		position: absolute;
+		right: 45%;
+		top: 3%; z-index: 2;
+	  }
+	  
+	  @keyframes MoveUpDown {
+		0%, 100% {
+		  top: 3%;
+		}
+		50% {
+		  top: 8%;
+		}
+	  }
+
+	  #pc {
+		animation: MoveUpDownPC 12s linear infinite;
+		width:90%; 
+		float: right;
+		margin-right: -30px;
+	  }
+	  
+	  @keyframes MoveUpDownPC {
+		0%, 100% {
+			transform: translateY(0);
+		
+		}
+		50% {
+			transform: translateY(20px);
+		
+		}
+	  }
+
+
+	  .default-margin-bottom {
+		margin-bottom: 0;
+		margin-left:0;
+		margin-top: 15vh;
+	}
+
+	.text-normal{
+		font-family: 'BebasR';
+		font-size: 5vh;
+		display: block;
+		line-height: 5vh;
+		text-transform: uppercase;
+		z-index:999;
+		text-align: center;
+	}
+	.clients {
+		font-size: 6vh;
+	}
+
+	#apply-btn {
+		width: 80%; 
+		font-size:30px;
+		 font-family: 'BebasR';
+		  box-shadow:0 0 5px rgba(0,0,0,0.8); 
+		  margin-top:10px;
+		  border-radius: 10px;
+		  margin-top:20px;
+	}
+	
+  }
