@@ -235,5 +235,9 @@ background: linear-gradient(rgba(2,0,36,1) 0%, rgba(247,1,2,1) 0%, rgba(153,28,3
 		  border-radius: 10px;
 		  margin-top:20px;
 	}
+		.pc-area {
+		overflow:hidden;
+		height: 400px;
+	}
 	
   }
