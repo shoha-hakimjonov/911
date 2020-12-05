@@ -13,12 +13,28 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
-   <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 		<link rel="icon" href="img/logo.png" type="image/x-icon">
   <title>911adv</title>
 </head>
 
 <body>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfc2cuqU1bI2pCOn_32KkL_pItvWZyj_Z7Qf5cyiai9yngWIg/viewform?embedded=true" width="100%" height="1550px" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+   
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="container-fluid home-container">
   <div class="row" >
 
@@ -44,7 +60,7 @@
                 <p class="text-normal">Вашему бизнесу нужны<br>
                   не подписчики,<br>
                   а <strong class="clients">клиенты</strong><br>
-                <a href=""><button type="button" class="btn btn-danger" id="apply-btn">Оставить Заявку</button></a>
+                <button type="button" class="btn btn-danger" id="apply-btn" data-toggle="modal" data-target="#exampleModal">Оставить Заявку</button>
 
               </div>
             </div>
@@ -55,8 +71,8 @@
     </div>
     <div class="col-lg-6" id="images-col">
       <div id="social">
-       <a href=""> <img class="width-50" src="img/fb.png" /> </a>
-        <a href=""><img class="width-50" src="img/instagram.png" /></a>
+       <a href="https://www.facebook.com/911.tj" target="_blank"> <img class="width-50" src="img/fb.png" /> </a>
+        <a href="https://instagram.com/911.tj" target="_blank"><img class="width-50" src="img/instagram.png" /></a>
       </div>
       <div class="phone-space">
         <img  src="img/phone.png" id="phone"/>
@@ -66,6 +82,7 @@
       </div>
 
     </div>
+    
   </div>
 </div>
   <script src="js/jquery-3.5.1.min.js"></script>
