@@ -27,7 +27,7 @@ body { margin:0; /* This is used to reset any browser-default margins */ }
 #images-col {
 	position: absolute;
     right: 0;
-    bottom: 0;
+    top:15vh;
     max-width: 100%;
     bottom: 5%;
 }
